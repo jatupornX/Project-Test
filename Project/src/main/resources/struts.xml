@@ -2,7 +2,6 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
-<!-- version 1.2 -->
 <struts>
     <constant name="struts.devMode" value="true" />
     
@@ -17,7 +16,7 @@
     <package name="Project" extends="struts-default">
 
         <global-results>
-            <result name="login">/login.jsp</result>
+            <result name="login">/</result>
             <result name="noaccess">/noaccess.jsp</result>
             <result name="getCustomer">/index.jsp</result>
         </global-results>
