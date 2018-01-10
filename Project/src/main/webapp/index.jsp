@@ -1,5 +1,10 @@
 <html>
-<body>
-<h2>Hello Worldz! hello it's me </h2>
-</body>
+	<body>
+		Name : <input type="text" name="user">
+		Mail : <input type="text" name="mail">
+		<button>Submit</button>		
+	</body>
 </html>
+
+
+
