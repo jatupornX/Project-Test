@@ -2,7 +2,6 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
-<!-- version 1.2 -->
 <struts>
     <constant name="struts.devMode" value="true" />
     
@@ -24,6 +23,11 @@
 
         <action name="testMyAction" class="com.smartict.testaction.TestAction" method="doSomething">
             <result name="success">/index.jsp</result>
+        </action>
+        
+          <action name="form-boss" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="error">/index.jsp</result>
+            <result name="success">/form_boss.jsp</result>
         </action>
     </package>
 
