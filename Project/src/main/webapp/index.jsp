@@ -1,8 +1,13 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
+<head></head>
 <body>
-<h2>Hello Worldz!</h2>
-<h2>Hello kuyRut!</h2>
-<h2>Hello Worldz! hello it's me </h2>
-<h2>Hello kuy rai </h2>
+	<h1>Struts 2 Hello World Example</h1>
+
+	<h2>
+		Hello
+	</h2>
+
 </body>
 </html>
