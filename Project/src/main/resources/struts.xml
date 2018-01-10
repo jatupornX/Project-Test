@@ -2,25 +2,6 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
-<<<<<<< HEAD
- <!-- version 1.2 -->
-<struts>
-	<constant name="struts.multipart.maxSize" value="110000000" />
-    <package name="Project" extends="struts-default">
- 		<global-results>
-		    <result name="login">/login.jsp</result>
-		    <result name="noaccess">noaccess.jsp</result>
-		</global-results>
-		
-		<action name="addcustomer" class="Action.CsinsertAction" method="insertCustomer">
-	   		<result name="success" >View.jsp</result> 
-	   		<result name="error" >a.jsp</result>       
-	    </action>
-
-    </package>
-</struts>
-=======
-<!-- version 1.2 -->
 <struts>
     <constant name="struts.devMode" value="true" />
     
@@ -43,7 +24,11 @@
         <action name="testMyAction" class="com.smartict.testaction.TestAction" method="doSomething">
             <result name="success">/index.jsp</result>
         </action>
+        
+          <action name="form-boss" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="error">/index.jsp</result>
+            <result name="success">/form_boss.jsp</result>
+        </action>
     </package>
 
 </struts>
->>>>>>> 6995c85a111fb3361a5c1b34d3e30b1b7793eb04
