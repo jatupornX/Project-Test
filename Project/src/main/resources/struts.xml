@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- version 1.2 -->
+<struts>
+    <constant name="struts.devMode" value="true" />
+    
+    <!-- RESTFUL STRUTS WILDCARD -->
+    <!-- FOR FURTHER INFO ABOUT THIS -->
+    <!-- https://struts.apache.org/docs/wildcard-mappings.html -->
+    <constant name="struts.enable.SlashesInActionNames" value="true" />
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="false" />
+    <constant name="struts.patternMatcher" value="regex" />
+    <!-- RESTFUL STRUTS WILDCARD -->
+
+    <package name="Project" extends="struts-default">
+
+        <global-results>
+            <result name="login">/login.jsp</result>
+            <result name="noaccess">/noaccess.jsp</result>
+            <result name="getCustomer">/index.jsp</result>
+        </global-results>
+
+        <action name="testMyAction" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="success">/index.jsp</result>
+        </action>
+    </package>
+
+</struts>
