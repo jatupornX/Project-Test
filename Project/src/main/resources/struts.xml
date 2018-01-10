@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ <!-- version 1.2 -->
+<struts>
+	<constant name="struts.multipart.maxSize" value="110000000" />
+    <package name="Project" extends="struts-default">
+ 		<global-results>
+		    <result name="login">/login.jsp</result>
+		    <result name="noaccess">noaccess.jsp</result>
+		</global-results>
+		
+		<action name="addcustomer" class="Action.CsinsertAction" method="insertCustomer">
+	   		<result name="success" >View.jsp</result> 
+	   		<result name="error" >a.jsp</result>       
+	    </action>
+
+    </package>
+</struts>
