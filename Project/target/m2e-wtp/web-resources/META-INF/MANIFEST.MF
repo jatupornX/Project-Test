@@ -1,9 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: Sheepy
-=======
-Built-By: Rudeboysmilkpointpk
->>>>>>> 53a386098f9395348c74b359809fe79fc40000ec
 Build-Jdk: 1.8.0_151
 Created-By: Maven Integration for Eclipse
 
