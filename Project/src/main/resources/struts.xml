@@ -25,6 +25,12 @@
         <action name="testMyAction" class="com.smartict.testaction.TestAction" method="doSomething">
             <result name="success">/index.jsp</result>
         </action>
+        
+        
+        <action name="form-petch" class="member.MemberAction" method="hello">
+            <result name="error">/index.jsp</result>
+            <result name="success">/form_petch.jsp</result>
+        </action>
     </package>
 
 </struts>
