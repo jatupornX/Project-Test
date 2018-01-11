@@ -14,7 +14,8 @@
     <constant name="struts.patternMatcher" value="regex" />
     <!-- RESTFUL STRUTS WILDCARD -->
 
-    <package name="Project" extends="struts-default">
+    
+    <package name="Project" namespace="/" extends="struts-default">
 
         <global-results>
             <result name="login">/login.jsp</result>
@@ -26,5 +27,15 @@
             <result name="success">/index.jsp</result>
         </action>
     </package>
+
+    <package name="users" namespace="/users" extends="struts-default">
+        <action name="form-louise" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="success">/users/louise/form_louise.jsp</result>
+        </action>
+        <action name="view-louise" class="com.smartict.testaction.LouiseAction" method="getNameInfo">
+            <result name="success">/users/louise/view_louise.jsp</result>
+        </action>
+    </package>
+    
 
 </struts>
