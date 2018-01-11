@@ -8,11 +8,11 @@
 		Hello
 	</h2>
 	
-	Name<input type="text">
-	E-mail<input type="text">
 	
 	<form action="Show">   
 	
+	Name<input type="text" name="name">
+	E-mail<input type="text" name="email">
 	<button type="submit">Submit</button>
 	
 	</form>
