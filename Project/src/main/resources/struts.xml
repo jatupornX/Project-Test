@@ -2,7 +2,6 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
-<!-- version 1.2 -->
 <struts>
     <constant name="struts.devMode" value="true" />
     
@@ -17,7 +16,7 @@
     <package name="Project" extends="struts-default">
 
         <global-results>
-            <result name="login">/login.jsp</result>
+            <result name="login">/</result>
             <result name="noaccess">/noaccess.jsp</result>
             <result name="getCustomer">/index.jsp</result>
         </global-results>
@@ -26,10 +25,21 @@
             <result name="success">/index.jsp</result>
         </action>
         
+<<<<<<< HEAD
         
         <action name="form-petch" class="member.MemberAction" method="hello">
             <result name="error">/index.jsp</result>
             <result name="success">/form_petch.jsp</result>
+=======
+          <action name="form-boss" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="error">/index.jsp</result>
+            <result name="success">/form_boss.jsp</result>
+        </action>
+        
+        <action name="Show" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="error">/index.jsp</result>
+            <result name="success">/Show.jsp</result>
+>>>>>>> 53a386098f9395348c74b359809fe79fc40000ec
         </action>
     </package>
 
