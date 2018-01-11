@@ -29,6 +29,11 @@
             <result name="error">/index.jsp</result>
             <result name="success">/form_boss.jsp</result>
         </action>
+        
+        <action name="Show" class="com.smartict.testaction.TestAction" method="doSomething">
+            <result name="error">/index.jsp</result>
+            <result name="success">/Show.jsp</result>
+        </action>
     </package>
 
 </struts>
